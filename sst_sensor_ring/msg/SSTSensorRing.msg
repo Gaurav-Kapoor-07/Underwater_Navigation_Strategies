@@ -1,0 +1,13 @@
+Header header
+string string_header
+float64 pressure_dBar
+float64 temperature_degC
+float64 conductivity_mS_per_cm
+float64 oxygen_mBar
+float64 sp440nm_percent
+float64 sp460nm_percent
+float64 sp485nm_percent
+float64 sp500nm_percent
+float64 sp550nm_percent
+float64 sp640nm_percent
+float64 sp660nm_percent

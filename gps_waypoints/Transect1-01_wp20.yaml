@@ -1,0 +1,91 @@
+wpts:
+    # 0 - start
+  -
+    lat: 53.7768
+    lon: 10.75233
+    
+    # 1 - submerse
+  -
+    lat: 53.77663
+    lon: 10.75244
+    
+    # 2 - armleuchter
+  -
+    lat: 53.77646
+    lon: 10.75255
+    
+    # 3 - armleuchter
+  -
+    lat: 53.77628
+    lon: 10.75266
+    
+    # 4 - armleuchter
+  -
+    lat: 53.77612
+    lon: 10.75277
+    
+    # 5 - armleuchter
+  -
+    lat: 53.77595
+    lon: 10.75288
+    
+    # 6 - armleuchter
+  -
+    lat: 53.77578
+    lon: 10.75299
+    
+    # 7 - armleuchter
+  -
+    lat: 53.7756136
+    lon: 10.7530918
+    
+    # 8 - armleuchter
+  -
+    lat: 53.77545
+    lon: 10.7532
+    
+    # 9 - armleuchter
+  -
+    lat: 53.77528
+    lon: 10.7533
+    
+    # 10 - armleuchter
+  -
+    lat: 53.77511
+    lon: 10.75341
+    
+    # 11 - armleuchter
+  -
+    lat: 53.77494
+    lon: 10.75352
+    
+    # 12 - armleuchter
+  -
+    lat: 53.77477
+    lon: 10.75363
+    
+    # 13 - armleuchter
+  -
+    lat: 53.7746
+    lon: 10.75374
+    
+    # 14 - Submerse
+  -
+    lat: 53.77443
+    lon: 10.75385
+    
+    # 15 - Submerse
+  -
+    lat: 53.77426
+    lon: 10.75396
+    
+    # 16 - Submerse
+  -
+    lat: 53.77409
+    lon: 10.75406
+    
+    # 17 - End
+  -
+    lat: 53.77395
+    lon: 10.75416
+---

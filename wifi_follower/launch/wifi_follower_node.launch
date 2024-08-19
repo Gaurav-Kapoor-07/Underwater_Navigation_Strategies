@@ -1,0 +1,16 @@
+<launch>
+    <node pkg="wifi_follower" type="wifi_follower" name="wifi_follower" output="screen">
+    <remap from="mn3/remaining_gps_waypoints" to="/cc/ui/path"/>
+    <rosparam>
+    id_master: 3
+    master_follower_distance_setpoint_m: 10.0 
+    <!-- master_follower_distance_setpoint_m: 20.0  -->
+    turn_left_angle_deg: 15.0
+    turn_right_angle_deg: 15.0
+    speed_up: 0.2
+    slow_down: 0.2
+    wifi_comm_lost_sec: 30.0
+    wifi_comm_master_gps_freq: 10.0
+    </rosparam>
+    </node>
+</launch>

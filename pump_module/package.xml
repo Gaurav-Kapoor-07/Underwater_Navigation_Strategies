@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>pump_module</name>
+    <version>0.1.0</version>
+    <description>Pump module</description>
+    <maintainer email="behrje@iti.uni-luebeck.de">Uli Behrje</maintainer>
+    <maintainer email="isokeit@iti.uni-luebeck.de">Cedric Isokeit</maintainer>
+    <maintainer email="kapoor@iti.uni-luebeck.de">Gaurav Kapoor</maintainer>
+    <license>BSD</license>
+    <author email="behrje@iti.uni-luebeck.de">Uli Behrje</author>
+    <author email="kapoor@iti.uni-luebeck.de">Gaurav Kapoor</author>
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>monsun_util</depend>
+    <depend>roscpp</depend>
+    <depend>std_srvs</depend>
+    <export></export>
+</package>

@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find ahoi_modem)/launch/desktop.launch" />
+  <include file="$(find mn_launch)/launch/mn2-drivers.launch" />
+</launch>

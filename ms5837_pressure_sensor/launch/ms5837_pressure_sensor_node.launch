@@ -1,0 +1,5 @@
+<launch>
+ 
+   <node pkg="ms5837_pressure_sensor" name="ms5837_pressure_sensor_node" type="ms5837_pressure_sensor_node.py" output="screen"/>
+   
+</launch>

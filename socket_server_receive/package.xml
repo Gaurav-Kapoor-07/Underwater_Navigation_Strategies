@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>socket_server_receive</name>
+    <version>0.1.0</version>
+    <description>Socket server receive package</description>
+    <maintainer email="kapoor@iti.uni-luebeck.de">Gaurav Kapoor</maintainer>
+    <license>BSD</license>
+    <author email="kapoor@iti.uni-luebeck.de">Gaurav Kapoor</author>
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>roscpp</depend>
+    <depend>std_msgs</depend>
+    <depend>std_srvs</depend>
+    <depend>vegetation_boundary_message</depend>
+    <depend>monsun_msgs</depend>
+    <export></export>
+</package>

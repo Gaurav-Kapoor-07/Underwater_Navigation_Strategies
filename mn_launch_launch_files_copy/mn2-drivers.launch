@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find i2c_drivers)/launch/mn2-battery.launch" />
+    <include file="$(find i2c_drivers)/launch/mn2-engine.launch" />
+    <include file="$(find i2c_drivers)/launch/mn2-ms5803.launch" />
+    <include file="$(find i2c_drivers)/launch/mn2-xsens.launch" />
+</launch>

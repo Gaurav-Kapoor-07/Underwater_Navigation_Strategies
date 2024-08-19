@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="monsun_comm" type="subscriber" name="subscriber_5" output="screen">
+    <rosparam>
+      id: 5
+      endpoint: 192.168.0.145
+    </rosparam>
+  </node>
+</launch>

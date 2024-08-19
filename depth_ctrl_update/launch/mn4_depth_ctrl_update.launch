@@ -1,0 +1,14 @@
+<launch>
+    <node pkg="depth_ctrl" type="depth_ctrl" name="depth_ctrl" output="screen">        
+        <rosparam>
+            cmd_topic: /engine/heave
+            depth_sensor: /ms5803/depth
+            imu_sensor: /xsens/imu
+            depth_sp: depth
+            gain_heave: 0.5
+            gain_roll: 0.0055
+            gain_pitch: 0.0165
+            offset_heave: 0.50
+        </rosparam>
+    </node>
+</launch>

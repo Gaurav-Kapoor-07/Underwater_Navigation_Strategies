@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="gps_buoy_restart" type="gps_buoy_node" name="gps_buoy" output="screen">
+    <rosparam>
+        gps_cable_length_m: 3.0
+        timeout_s: 900.0
+        <!-- surface_depth_m: 0.2 -->
+        depth_subscribed_min: 0.1
+        depth_subscribed_max: 8.0
+        surface_wait_s: 6.0
+    </rosparam>
+    </node>
+</launch>

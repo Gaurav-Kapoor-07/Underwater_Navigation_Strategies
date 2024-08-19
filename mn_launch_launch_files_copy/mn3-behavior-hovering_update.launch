@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find depth_ctrl)/launch/depth_ctrl.launch" />
+    <include file="$(find heading_ctrl)/launch/heading_ctrl_hovering.launch" />
+    <include file="$(find hovering_update)/launch/hovering_update_node.launch" />
+</launch>

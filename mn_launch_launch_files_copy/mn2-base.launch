@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find mn_launch)/launch/mn2-drivers.launch" />
+    <include file="$(find monsun_comm)/launch/mn2-pub.launch" />
+    <include file="$(find depth_ctrl)/launch/depth_ctrl.launch" />
+    <include file="$(find heading_ctrl)/launch/heading_ctrl.launch" />
+    <include file="$(find gps_navigation)/launch/test.launch" />
+</launch>

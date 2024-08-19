@@ -1,0 +1,16 @@
+<launch>
+
+  <node pkg="monsun_comm" type="publisher" name="publisher" output="screen">
+    <rosparam>
+      id: 1
+    </rosparam>
+  </node>
+
+  <node pkg="monsun_comm" type="subscriber" name="subscriber" output="screen">
+    <rosparam>
+      id: 1
+      endpoint: 127.0.0.1
+    </rosparam>
+  </node>
+
+</launch>

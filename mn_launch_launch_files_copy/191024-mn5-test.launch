@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find depth_ctrl)/launch/depth_ctrl.launch" />
+  <include file="$(find heading_ctrl)/launch/heading_ctrl.launch" />
+  <include file="$(find mn_launch)/launch/mn5-drivers.launch" />
+</launch>

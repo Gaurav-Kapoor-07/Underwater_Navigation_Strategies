@@ -1,0 +1,3 @@
+Header header
+int32 vegetation_boundary_detected
+float64 confidence_percent

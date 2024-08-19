@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find depth_ctrl)/launch/depth_ctrl.launch" />
+    <include file="$(find heading_ctrl)/launch/heading_ctrl_gps_navigation.launch" />
+    <include file="$(find hovering)/launch/hovering_node.launch" />
+    <include file="$(find point_and_shoot_hovering)/launch/point_and_shoot_hovering_node.launch" />
+    <arg name="gps_waypoints_file_name" default="/home/monsun/ros_workspace/src/ros_firmware/gaurav_ros_packages/gps_waypoints/gps_waypoints_transect_1.yaml" doc="GPS waypoints YAML file name with location" />
+    <node pkg="rostopic" type="rostopic" name="gps_waypoints_pub" output="screen" args="pub /cc/ui/path monsun_msgs/GpsPath -f $(arg gps_waypoints_file_name) -l" />
+</launch>

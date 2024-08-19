@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find depth_ctrl)/launch/depth_ctrl.launch" />
+  <include file="$(find follow_ctrl)/launch/follow_ctrl_deb.launch" />
+  <include file="$(find heading_ctrl)/launch/heading_ctrl.launch" />
+  <include file="$(find kobe_comm)/launch/mn3.launch" />
+  <include file="$(find mn_launch)/launch/190925-mn3-ahoi-base.launch" />
+</launch>

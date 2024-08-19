@@ -1,0 +1,24 @@
+<launch>
+  <env name="ROSCONSOLE_CONFIG_FILE" value="$(find i2c_interface)/config/log_debug.conf" />
+  <node pkg="gps_navigation_update" type="gps_navigation_update_node" name="gps_navigation_node" output="screen">
+    <!-- names of topics to connect with -->
+    <!-- param name="cmd_vel_topic" value="/propulsion_sys/cmd_vel" /-->
+    <!-- param name="heading_sensor_topic" value="/xsens/imu" /-->
+
+    <!-- config topic names -->
+    <param name="current_pos_topic" value="/xsens/gps" />
+    <param name="target_pos_topic" value="/cc/ui/path" />
+    <param name="enable_topic" value="enable" />
+    <param name="target_speed_topic" value="speed" />
+    <param name="set_heading_topic" value="/heading_ctrl/heading" />
+    <param name="set_speed_topic" value="/heading_ctrl/speed" />
+    <!-- NOTE depth parameter is missing -->
+    <!-- <param name="cmd_enable_topic" value="/heading_ctrl/enable" /> -->
+    <!-- <param name="set_depth_topic" value="/depth_ctrl/depth" /> -->
+
+    <!-- default configuration -->
+    <param name="enable" value="false" />
+    <param name="speed" value="0.5" />
+    <param name="threshold_distance_wp_m" value="5.0" />
+  </node>
+</launch>

@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find depth_ctrl)/launch/depth_ctrl.launch" />
+    <include file="$(find heading_ctrl)/launch/heading_ctrl_gps_navigation.launch" />
+    <include file="$(find point_and_shoot)/launch/point_and_shoot_node.launch" />
+</launch>

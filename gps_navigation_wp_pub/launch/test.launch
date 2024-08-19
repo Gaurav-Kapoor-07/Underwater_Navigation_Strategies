@@ -1,0 +1,29 @@
+<launch>
+  <env name="ROSCONSOLE_CONFIG_FILE" value="$(find i2c_interface)/config/log_debug.conf" />
+  <node pkg="gps_navigation_wp_pub" type="gps_navigation_wp_pub_node" name="gps_navigation_node" output="screen">
+    <!-- names of topics to connect with -->
+    <!-- param name="cmd_vel_topic" value="/propulsion_sys/cmd_vel" /-->
+    <!-- param name="heading_sensor_topic" value="/xsens/imu" /-->
+
+    <!-- config topic names -->
+    <param name="current_pos_topic" value="/xsens/gps" />
+    <param name="target_pos_topic" value="/cc/ui/path" />
+
+    <!-- set_remaining_gps_waypoints_topic -->
+    <param name="set_remaining_gps_waypoints_topic" value="remaining_gps_waypoints" />
+
+    <!-- signal waypoint reached topic -->
+    <param name="set_signal_waypoint_reached_topic" value="signal_waypoint_reached" />
+    
+    <param name="enable_topic" value="enable" />
+    <param name="target_speed_topic" value="speed" />
+    <param name="set_heading_topic" value="/heading_ctrl/heading" />
+    <param name="set_speed_topic" value="/heading_ctrl/speed" />
+    <!-- NOTE depth parameter is missing -->
+    <!-- <param name="cmd_enable_topic" value="/heading_ctrl/enable" /> -->
+
+    <!-- default configuration -->
+    <param name="enable" value="false" />
+    <param name="speed" value="0.5" />
+  </node>
+</launch>

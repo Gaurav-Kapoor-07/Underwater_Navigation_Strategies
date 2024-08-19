@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find ahoi_modem)/launch/desktop.launch" />
+  <include file="$(find depth_ctrl)/launch/depth_ctrl.launch" />
+  <include file="$(find heading_ctrl)/launch/heading_ctrl.launch" />
+  <include file="$(find mn_launch)/launch/mn3-drivers.launch" />
+</launch>

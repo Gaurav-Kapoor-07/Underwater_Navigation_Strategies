@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find gps_buoy)/launch/gps_buoy_node.launch" />
+    <!-- <include file="$(find mn_launch)/launch/mn3-behavior-hovering_update.launch" /> -->
+    <include file="$(find mn_launch)/launch/mn3-behavior-hovering.launch" />
+    <include file="$(find gps_navigation)/launch/test.launch" />
+    <arg name="gps_waypoints_file_name" default="/home/monsun/ros_workspace/src/ros_firmware/gaurav_ros_packages/gps_waypoints/gps-waypoints-transect-1_3-0-1_to_4m.yaml" doc="GPS waypoints YAML file name with path" />
+    <node pkg="rostopic" type="rostopic" name="gps_waypoints_pub" output="screen" args="pub /cc/ui/path monsun_msgs/GpsPath -f $(arg gps_waypoints_file_name) -l" />
+</launch>

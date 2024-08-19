@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find i2c_interface)/launch/180718-gps-follow-mn1.launch" />
+  <include file="$(find heading_ctrl)/launch/heading_ctrl_debug.launch" />
+  <include file="$(find gps_navigation)/launch/test.launch" />
+  <include file="$(find monsun_comm)/launch/mn12-mn1.launch" />
+</launch>

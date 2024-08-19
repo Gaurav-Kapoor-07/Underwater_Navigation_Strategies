@@ -1,0 +1,9 @@
+<launch>
+    <!-- <include file="$(find i2c_drivers)/launch/mn3-battery.launch" /> -->
+    <!-- <include file="$(find i2c_drivers)/launch/mn3-engine.launch" /> -->
+    <include file="$(find i2c_drivers)/launch/mn3-ms5803.launch" />
+    <include file="$(find i2c_drivers)/launch/mn3-xsens.launch" />
+    <!-- <node name="pinger_driver" pkg="mn_launch" type="pinger_driver.sh" /> -->
+    <node name="pinger_driver_distance_simple" pkg="mn_launch" type="pinger_driver_distance_simple.sh" /> 
+    <node pkg="rosbag" type="record" name="record" output="screen" args="-a -o /home/monsun/rosbags/test" />
+</launch>

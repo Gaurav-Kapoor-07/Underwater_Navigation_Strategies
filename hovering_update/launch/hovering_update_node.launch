@@ -1,0 +1,13 @@
+<launch>
+    <node pkg="hovering_update" type="hovering_update_node" name="hovering" output="screen">
+    <rosparam>
+        hovering_distance_m: 1.0
+        confidence_threshold_p: 100.0
+        distance_median_filter_size: 14
+        depth_subscribed_min: 0.0
+        depth_subscribed_max: 8.0
+        <!-- delta_actual_hovering_distance_m: 0.1 -->
+        <!-- speed: 0.7 -->
+    </rosparam>
+    </node>
+</launch>

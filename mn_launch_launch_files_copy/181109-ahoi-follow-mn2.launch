@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find i2c_interface)/launch/180718-gps-follow-mn2.launch" />
+    <include file="$(find modemdriver)/launch/desktop.launch" />
+</launch>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>point_and_shoot_hovering_update</name>
+    <version>0.1.0</version>
+    <description>Point and Shoot Hovering Update</description>
+    <maintainer email="isokeit@iti.uni-luebeck.de">Cedric Isokeit</maintainer>
+    <maintainer email="behrje@iti.uni-luebeck.de">Uli Behrje</maintainer>
+    <maintainer email="kapoor@iti.uni-luebeck.de">Gaurav Kapoor</maintainer>
+    <license>BSD</license>
+    <author email="behrje@iti.uni-luebeck.de">Uli Behrje</author>
+    <author email="isokeit@iti.uni-luebeck.de">Cedric Isokeit</author>
+    <maintainer email="kapoor@iti.uni-luebeck.de">Gaurav Kapoor</maintainer>
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>geometry_msgs</depend>
+    <depend>monsun_msgs</depend>
+    <depend>monsun_util</depend>
+    <depend>roscpp</depend>
+    <depend>std_msgs</depend>
+    <depend>std_srvs</depend>
+    <export></export>
+</package>

@@ -1,0 +1,5 @@
+<launch>
+ 
+   <node pkg="sst_sensor_ring" name="sst_sensor_ring_node" type="sst_sensor_ring_node.py" output="screen"/>
+   
+</launch>

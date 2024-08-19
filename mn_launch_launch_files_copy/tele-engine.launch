@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen">
+        <rosparam>
+            speed: 0.40
+            turn: 0.30
+        </rosparam>
+        <remap from="cmd_vel" to="/engine/cmd_vel" />
+    </node>
+</launch>

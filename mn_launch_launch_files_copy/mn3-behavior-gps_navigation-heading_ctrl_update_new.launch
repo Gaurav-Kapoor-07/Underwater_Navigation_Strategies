@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find heading_ctrl_update_new)/launch/heading_ctrl_update_new_gps_navigation.launch" />
+    <include file="$(find gps_navigation)/launch/test.launch" />
+    <arg name="gps_waypoints_file_name" default="/home/monsun/gps_waypoints/gps_waypoints_shore_all_boats.yaml" doc="GPS waypoints YAML file name with location" />
+    <node pkg="rostopic" type="rostopic" name="gps_waypoints_pub" output="screen" args="pub /cc/ui/path monsun_msgs/GpsPath -f $(arg gps_waypoints_file_name) -l" />
+</launch>

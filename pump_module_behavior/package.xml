@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>pump_module_behavior</name>
+    <version>0.1.0</version>
+    <description>Pump module behavior</description>
+    <maintainer email="kapoor@iti.uni-luebeck.de">Gaurav Kapoor</maintainer>
+    <license>BSD</license>
+    <author email="kapoor@iti.uni-luebeck.de">Gaurav Kapoor</author>
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>geometry_msgs</depend>
+    <depend>monsun_msgs</depend>
+    <depend>monsun_util</depend>
+    <depend>roscpp</depend>
+    <depend>std_msgs</depend>
+    <depend>std_srvs</depend>
+    <export></export>
+</package>

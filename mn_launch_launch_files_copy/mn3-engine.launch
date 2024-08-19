@@ -1,0 +1,24 @@
+<launch>
+    <node pkg="i2c_drivers" type="engine" name="engine" output="screen">
+        <rosparam>
+            engine_config: 1 <!-- 1: default, 2: T100, 3: Ard6x -->
+            i2c_bus: /dev/i2c-1
+
+            addr_hl: 0x39
+            addr_hr: 0x38
+
+            addr_vfl: 0x3e
+            addr_vfr: 0x37
+            addr_vrl: 0x3b
+            addr_vrr: 0x3d
+
+            inv_hl: False
+            inv_hr: False
+
+            inv_vfl: False
+            inv_vfr: False
+            inv_vrl: False
+            inv_vrr: True
+        </rosparam>
+    </node>
+</launch>

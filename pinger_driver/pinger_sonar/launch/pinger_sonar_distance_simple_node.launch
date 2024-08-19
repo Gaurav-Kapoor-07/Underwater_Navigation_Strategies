@@ -1,0 +1,5 @@
+<launch>
+ 
+   <node pkg="pinger_sonar" name="pinger" type="pinger_sonar_distance_simple.py" output="screen"/>
+   
+</launch>

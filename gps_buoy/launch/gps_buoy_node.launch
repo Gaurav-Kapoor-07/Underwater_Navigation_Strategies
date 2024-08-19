@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="gps_buoy" type="gps_buoy_node" name="gps_buoy" output="screen">
+    <rosparam>
+        gps_cable_length_m: 3.0
+    </rosparam>
+    </node>
+</launch>

@@ -1,0 +1,3 @@
+Header header
+float64 distance_m
+float64 confidence_p

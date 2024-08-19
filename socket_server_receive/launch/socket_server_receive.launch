@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="socket_server_receive" type="socket_server_receive_node" name="vegetation_boundary_detection" output="screen">
+    <rosparam>
+        port_number: 10000
+        buffer_size: 1024
+        <!-- vb_msg_publish_freq: 2.0 -->
+    </rosparam>
+    </node>
+</launch>

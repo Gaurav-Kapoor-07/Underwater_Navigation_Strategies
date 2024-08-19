@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="pump_module" type="pump_module" name="pump_module" output="screen">
+        <rosparam>
+        i2c_bus: /dev/i2c-1
+        address: 0x58
+        </rosparam>
+    </node>
+</launch>

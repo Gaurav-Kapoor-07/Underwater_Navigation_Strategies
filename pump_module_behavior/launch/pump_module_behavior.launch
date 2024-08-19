@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="pump_module_behavior" type="pump_module_behavior" name="pump_module_behavior" output="screen">
+     <rosparam>
+        depth_subscribed_min: 0.1
+        depth_subscribed_max: 8.0
+        delta_actual_hovering_distance_m: 0.1
+    </rosparam>
+    </node>
+</launch>

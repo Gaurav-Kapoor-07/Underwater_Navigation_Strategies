@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find i2c_interface)/launch/180821-multibeam-dive-mn4.launch" />
+  <!-- <include file="$(find depth_ctrl)/launch/depth_ctrl_debug.launch" /> -->
+  <include file="$(find heading_ctrl)/launch/heading_ctrl_dive.launch" />
+</launch>

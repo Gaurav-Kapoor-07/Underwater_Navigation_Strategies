@@ -1,0 +1,21 @@
+<launch>
+    <node pkg="heading_ctrl_update_new" type="heading_ctrl_update_new" name="heading_ctrl" output="screen">
+        <!-- engine, depth_ctrl connection -->
+        <param name="surge_topic" value="/engine/surge" />
+        <!-- <param name="depth_ctrl_en_srv" value="/depth_ctrl/enable" />
+        <param name="depth_sp" value="/depth_ctrl/depth" /> -->
+
+        <!-- sensors -->
+        <param name="imu_topic" value="/xsens/imu" />
+
+        <!-- parameters -->
+        <param name="gain_heading" value="0.01667" />
+
+        <!-- Timeout feature
+        <param name="timeout_s" value="10.0" /> -->
+
+        <!-- <param name="threshold_degs" value="0.5" /> -->
+
+        <param name="heading_correction" value="10.0" />
+    </node>
+</launch>

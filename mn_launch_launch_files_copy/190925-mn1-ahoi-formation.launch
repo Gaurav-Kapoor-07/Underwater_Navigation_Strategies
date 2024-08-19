@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find kobe_comm)/launch/mn1.launch" />
+  <include file="$(find mn_launch)/launch/190925-mn1-ahoi-base.launch" />
+</launch>

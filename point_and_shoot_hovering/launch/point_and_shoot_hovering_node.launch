@@ -1,0 +1,28 @@
+<launch>
+  <env name="ROSCONSOLE_CONFIG_FILE" value="$(find i2c_interface)/config/log_debug.conf" />
+  <node pkg="point_and_shoot_hovering" type="point_and_shoot_hovering_node" name="point_and_shoot_hovering_node" output="screen">
+    <!-- names of topics to connect with -->
+    <!-- param name="cmd_vel_topic" value="/propulsion_sys/cmd_vel" /-->
+    <!-- param name="heading_sensor_topic" value="/xsens/imu" /-->
+
+    <!-- config topic names -->
+    <param name="current_pos_topic" value="/xsens/gps" />
+    <param name="target_pos_topic" value="/cc/ui/path" />
+    <param name="enable_topic" value="enable" />
+    <param name="target_speed_topic" value="speed" />
+    <param name="set_heading_topic" value="/heading_ctrl/heading" />
+    <param name="set_speed_topic" value="/heading_ctrl/speed" />
+    <!-- NOTE depth parameter is missing -->
+    <!-- <param name="cmd_enable_topic" value="/heading_ctrl/enable" /> -->
+
+    <!-- default configuration -->
+    <param name="enable" value="false" />
+    <param name="speed" value="0.7" />
+    <param name="heading_threshold_degs" value="1.0" />
+    <param name="timeout_secs" value="120.0" />
+    <param name="come_up_duration_secs" value="5.0" />
+    <param name="dist_to_waypoint_threshold_m" value="3.0" />
+    <param name="assumed_speed_m_p_s" value="0.05" />
+    
+  </node>
+</launch>

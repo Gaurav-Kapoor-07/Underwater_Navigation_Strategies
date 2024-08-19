@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>hovering</name>
+    <version>0.1.0</version>
+    <description>Hovering package</description>
+    <maintainer email="kapoor@iti.uni-luebeck.de">Gaurav Kapoor</maintainer>
+    <license>BSD</license>
+    <author email="kapoor@iti.uni-luebeck.de">Gaurav Kapoor</author>
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>roscpp</depend>
+    <depend>std_msgs</depend>
+    <depend>std_srvs</depend>
+    <depend>pinger_sonar</depend>
+    <export></export>
+</package>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>ms5837_pressure_sensor</name>
+    <version>0.1.0</version>
+    <description>ms5837 pressure sensor interface</description>
+    <maintainer email="kapoor@iti.uni-luebeck.de">Gaurav Kapoor</maintainer>
+    <license>BSD</license>
+    <author email="kapoor@iti.uni-luebeck.de">Gaurav Kapoor</author>
+
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>rospy</depend>
+    <depend>std_msgs</depend>
+    <export></export>
+</package>
